@@ -1,203 +1,160 @@
-import Head from 'next/head'
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
+import Banner from "../components/Banner";
+import Learn from "../components/Learn";
 
 const Home = () => (
-  <div className="container">
-    <Head>
-      <title>Create Next App</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-
-    <main>
-      <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
-
-      <p className="description">
-        Get started by editing <code>pages/index.js</code>
-      </p>
-
-      <div className="grid">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
-
-        <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
-
-        <a
-          href="https://zeit.co/new?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className="card"
-        >
-          <h3>Deploy &rarr;</h3>
-          <p>
-            Instantly deploy your Next.js site to a public URL with ZEIT Now.
+  <>
+    <div className='container md:px-4 mx-auto xl:px-4 lg:px-8 bg-tran-dark'>
+      <Header title='Transistor - podcast hosting for creatives, brands, professionals' />
+      <Banner />
+      <div className=''>
+        <div className='text-center pt-16'>
+          <h2 className=' text-5xl font-semibold'>
+            Start as many podcasts as you'd like
+          </h2>
+          <p className='text-2xl'>
+            We don't charge you more for creating additional podcasts.
           </p>
+          <Learn />
+        </div>
+        <div className='flex justify-center mt-16 '>
+          <iframe
+            width='896'
+            height='504'
+            src='https://www.youtube.com/embed/hUugNVgsXvk'
+            frameborder='0'
+            allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <style jsx>{`
+          iframe {
+            border-radius: 1rem;
+          }
+        `}</style>
+      </div>
+
+      <div className='text-center mt-16 mx-auto w-4/5'>
+        <div>
+          <h2 className=' text-5xl mb-8 font-semibold'>
+            Publish your podcast everywhere
+          </h2>
+          <p className='text-2xl max-w-2xl mx-auto'>
+            We help you distribute to Apple Podcasts, Spotify, Google Podcasts,
+            Overcast, Pocket Casts, and many more!
+          </p>
+          <Learn />
+        </div>
+        <img
+          className='mx-auto mt-8 lg:max-w-2xl'
+          src='./images/publish-anywhere.png'
+          alt=''
+        />
+      </div>
+
+      <div className='text-center mt-16 mx-auto w-4/5'>
+        <div>
+          <h2 className=' text-5xl mb-8 font-semibold'>How does this sound?</h2>
+          <p className='text-2xl max-w-2xl mx-auto'>
+            Embed the podcast player on your website.
+          </p>
+          <Learn text='VIEW MORE EXAMPLES' />
+        </div>
+        <iframe
+          class='max-w-2xl mx-auto'
+          src='https://share.transistor.fm/e/rework/latest/dark'
+          width='100%'
+          height='180'
+          frameborder='0'
+          scrolling='no'
+          seamless='true'
+        ></iframe>
+      </div>
+
+      <div className='text-center mt-16 mx-auto  lg:w-4/5'>
+        <div>
+          <h2 className=' text-5xl mb-8 font-semibold'>
+            View detailed podcast analytics
+          </h2>
+          <p className='text-2xl max-w-2xl mx-auto'>
+            See your average downloads per episode, popular podcast apps, number
+            of subscribers, trends.
+          </p>
+          <Learn />
+        </div>
+        <img
+          className='mx-auto mt-8 xs:max-w-4xl'
+          src='./images/analytics.png'
+          alt=''
+        />
+      </div>
+
+      <div className='text-center mt-16 mx-auto '>
+        <div>
+          <h2 className=' text-5xl mb-8 font-semibold'>
+            Who uses Transistor for their podcast?
+          </h2>
+          <p className='text-2xl max-w-2xl mx-auto'>
+            Creatives, businesses, and professional podcasters trust Transistor
+            with their audio hosting and analytics.
+          </p>
+          <Learn />
+        </div>
+        <div className='w-full'>
+          <div className='flex mb-2 h-64 overflow-hidden'>
+            <div className='w-1/2 mr-l  relative overflow-hidden'>
+              <img src='./images/mess.jpg' alt='' />
+              <p className='absolute bottom-0 right-0 border-0 text-sm bg-gray-800 py-2 px-3 rounded-tl  '>
+                Mess
+              </p>
+            </div>
+            <div className='w-1/2 ml-1  relative overflow-hidden'>
+              <img src='./images/lew.jpg' alt='' />
+              <p className='absolute bottom-0 right-0 border-0 text-sm bg-gray-800 py-2 px-3 rounded-tl  '>
+                Lew Later
+              </p>
+            </div>
+          </div>
+          <div className='flex mb-2 h-64 overflow-hidden'>
+            <div className='w-1/3 mr-1  relative overflow-hidden'>
+              <img src='./images/collen.jpg' alt='' />
+              <p className='absolute bottom-0 right-0 border-0 text-sm bg-gray-800 py-2 px-3 rounded-tl  '>
+                Colleen Pellissier
+              </p>
+            </div>
+            <div className='w-1/3 mr-1  mr-l  relative overflow-hidden'>
+              <img src='./images/bara.jpg' alt='' />{" "}
+              <p className='absolute bottom-0 right-0 border-0 text-sm bg-gray-800 py-2 px-3 rounded-tl  '>
+                Bara Við
+              </p>
+            </div>
+            <div className='w-1/3 mr-l  relative overflow-hidden'>
+              <img src='./images/ashley.jpg' alt='' />{" "}
+              <p className='absolute bottom-0 right-0 border-0 text-sm bg-gray-800 py-1 px-3 rounded-tl  '>
+                Ashley Baxter
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='text-center my-16 mx-auto '>
+        <h2 className=' text-5xl mb-8 font-semibold'>
+          Try podcasting on Transistor for free
+        </h2>
+        <a
+          className='rounded-full border py-3 px-6  text-lg  hover:bg-white hover:text-black'
+          href='/'
+        >
+          Start a 14-day trial
         </a>
       </div>
-    </main>
+    </div>{" "}
+    <Footer />
+  </>
+);
 
-    <footer>
-      <a
-        href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
-      </a>
-    </footer>
-
-    <style jsx>{`
-      .container {
-        min-height: 100vh;
-        padding: 0 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      main {
-        padding: 5rem 0;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      footer {
-        width: 100%;
-        height: 100px;
-        border-top: 1px solid #eaeaea;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      footer img {
-        margin-left: 0.5rem;
-      }
-
-      footer a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      .title a {
-        color: #0070f3;
-        text-decoration: none;
-      }
-
-      .title a:hover,
-      .title a:focus,
-      .title a:active {
-        text-decoration: underline;
-      }
-
-      .title {
-        margin: 0;
-        line-height: 1.15;
-        font-size: 4rem;
-      }
-
-      .title,
-      .description {
-        text-align: center;
-      }
-
-      .description {
-        line-height: 1.5;
-        font-size: 1.5rem;
-      }
-
-      code {
-        background: #fafafa;
-        border-radius: 5px;
-        padding: 0.75rem;
-        font-size: 1.1rem;
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-      }
-
-      .grid {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        max-width: 800px;
-        margin-top: 3rem;
-      }
-
-      .card {
-        margin: 1rem;
-        flex-basis: 45%;
-        padding: 1.5rem;
-        text-align: left;
-        color: inherit;
-        text-decoration: none;
-        border: 1px solid #eaeaea;
-        border-radius: 10px;
-        transition: color 0.15s ease, border-color 0.15s ease;
-      }
-
-      .card:hover,
-      .card:focus,
-      .card:active {
-        color: #0070f3;
-        border-color: #0070f3;
-      }
-
-      .card h3 {
-        margin: 0 0 1rem 0;
-        font-size: 1.5rem;
-      }
-
-      .card p {
-        margin: 0;
-        font-size: 1.25rem;
-        line-height: 1.5;
-      }
-
-      @media (max-width: 600px) {
-        .grid {
-          width: 100%;
-          flex-direction: column;
-        }
-      }
-    `}</style>
-
-    <style jsx global>{`
-      html,
-      body {
-        padding: 0;
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-    `}</style>
-  </div>
-)
-
-export default Home
+export default Home;

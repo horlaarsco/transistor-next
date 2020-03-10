@@ -1,7 +1,7 @@
 const Footer = () => (
   <footer>
-    <div className='container mx-auto xl:px-0 md:px-4 lg:px-8 py-10 text-lg'>
-      <ul className='flex text-sm font-semibold'>
+    <div className='container mx-auto xl:px-0 px-4 lg:px-8 py-10 text-lg'>
+      <ul className='flex text-sm flex-wrap font-semibold'>
         <li className='mr-8'> About</li>
         <li className='mr-8'>Blog</li>
         <li className='mr-8'>Podcast</li>
@@ -10,8 +10,8 @@ const Footer = () => (
         <li className='mr-8'>Affiliates</li>
       </ul>
       <hr className='border-black my-8' />
-      <div className='flex justify-between'>
-        <div className='w-1/2 pr-10'>
+      <div className='flex  flex-col md:flex-row justify-between'>
+        <div className='md:w-1/2 w-full md:pr-10 '>
           <p className='mb-8 text-sm font-bold'>ABOUT US</p>
           <p>
             Transistor provides podcast hosting and analytics for thousands of
@@ -19,7 +19,7 @@ const Footer = () => (
           </p>
           <p>Learn how to start a podcast →.</p>
         </div>
-        <div className='w-1/2 pl-10 flex  justify-between'>
+        <div className='md:w-1/2 md:mt-0 mt-5 w-full  md:pl-10 flex  justify-between'>
           <div className='w-4/12'>
             <p className='mb-8 text-sm font-bold'> CONTACT</p>
             <p>support@transistor.fm</p>

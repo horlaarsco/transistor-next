@@ -6,12 +6,12 @@ import Learn from "../components/Learn";
 
 const Home = () => (
   <>
-    <div className='container md:px-4 mx-auto xl:px-4 lg:px-8 bg-tran-dark'>
+    <div className='container px-3 md:px-4 mx-auto xl:px-4 lg:px-8 bg-tran-dark'>
       <Header title='Transistor - podcast hosting for creatives, brands, professionals' />
       <Banner />
       <div className=''>
-        <div className='text-center pt-16'>
-          <h2 className=' text-5xl font-semibold'>
+        <div className='text-center lg:pt-16'>
+          <h2 className='text-3xl md:text-5xl font-semibold'>
             Start as many podcasts as you'd like
           </h2>
           <p className='text-2xl'>
@@ -39,7 +39,7 @@ const Home = () => (
 
       <div className='text-center mt-16 mx-auto w-4/5'>
         <div>
-          <h2 className=' text-5xl mb-8 font-semibold'>
+          <h2 className=' text-3xl md:text-5xl mb-8 font-semibold'>
             Publish your podcast everywhere
           </h2>
           <p className='text-2xl max-w-2xl mx-auto'>
@@ -57,7 +57,9 @@ const Home = () => (
 
       <div className='text-center mt-16 mx-auto w-4/5'>
         <div>
-          <h2 className=' text-5xl mb-8 font-semibold'>How does this sound?</h2>
+          <h2 className=' text-3xl md:text-5xl mb-8 font-semibold'>
+            How does this sound?
+          </h2>
           <p className='text-2xl max-w-2xl mx-auto'>
             Embed the podcast player on your website.
           </p>
@@ -76,7 +78,7 @@ const Home = () => (
 
       <div className='text-center mt-16 mx-auto  lg:w-4/5'>
         <div>
-          <h2 className=' text-5xl mb-8 font-semibold'>
+          <h2 className=' text-3xl md:text-5xl mb-8 font-semibold'>
             View detailed podcast analytics
           </h2>
           <p className='text-2xl max-w-2xl mx-auto'>
@@ -94,7 +96,7 @@ const Home = () => (
 
       <div className='text-center mt-16 mx-auto '>
         <div>
-          <h2 className=' text-5xl mb-8 font-semibold'>
+          <h2 className=' text-3xl md:text-5xl mb-8 font-semibold'>
             Who uses Transistor for their podcast?
           </h2>
           <p className='text-2xl max-w-2xl mx-auto'>
@@ -106,13 +108,21 @@ const Home = () => (
         <div className='w-full'>
           <div className='flex mb-2 h-64 overflow-hidden'>
             <div className='w-1/2 mr-l  relative overflow-hidden'>
-              <img src='./images/mess.jpg' alt='' />
+              <img
+                className='md:h-full lg:h-auto'
+                src='./images/mess.jpg'
+                alt=''
+              />
               <p className='absolute bottom-0 right-0 border-0 text-sm bg-gray-800 py-2 px-3 rounded-tl  '>
                 Mess
               </p>
             </div>
             <div className='w-1/2 ml-1  relative overflow-hidden'>
-              <img src='./images/lew.jpg' alt='' />
+              <img
+                className='md:h-full lg:h-auto'
+                src='./images/lew.jpg'
+                alt=''
+              />
               <p className='absolute bottom-0 right-0 border-0 text-sm bg-gray-800 py-2 px-3 rounded-tl  '>
                 Lew Later
               </p>
@@ -120,19 +130,31 @@ const Home = () => (
           </div>
           <div className='flex mb-2 h-64 overflow-hidden'>
             <div className='w-1/3 mr-1  relative overflow-hidden'>
-              <img src='./images/collen.jpg' alt='' />
+              <img
+                className='md:h-full lg:h-auto'
+                src='./images/collen.jpg'
+                alt=''
+              />
               <p className='absolute bottom-0 right-0 border-0 text-sm bg-gray-800 py-2 px-3 rounded-tl  '>
                 Colleen Pellissier
               </p>
             </div>
             <div className='w-1/3 mr-1  mr-l  relative overflow-hidden'>
-              <img src='./images/bara.jpg' alt='' />{" "}
+              <img
+                className='md:h-full lg:h-auto'
+                src='./images/bara.jpg'
+                alt=''
+              />{" "}
               <p className='absolute bottom-0 right-0 border-0 text-sm bg-gray-800 py-2 px-3 rounded-tl  '>
                 Bara Við
               </p>
             </div>
             <div className='w-1/3 mr-l  relative overflow-hidden'>
-              <img src='./images/ashley.jpg' alt='' />{" "}
+              <img
+                className='md:h-full lg:h-auto'
+                src='./images/ashley.jpg'
+                alt=''
+              />{" "}
               <p className='absolute bottom-0 right-0 border-0 text-sm bg-gray-800 py-1 px-3 rounded-tl  '>
                 Ashley Baxter
               </p>
@@ -142,7 +164,7 @@ const Home = () => (
       </div>
 
       <div className='text-center my-16 mx-auto '>
-        <h2 className=' text-5xl mb-8 font-semibold'>
+        <h2 className=' text-3xl md:text-5xl mb-8 font-semibold'>
           Try podcasting on Transistor for free
         </h2>
         <a

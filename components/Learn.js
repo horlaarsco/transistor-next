@@ -1,5 +1,5 @@
 const Learn = props => (
-  <p className='like-gold hover:underline text-base leading-3 my-5 '>
+  <p className='like-gold hover:underline text-sm md:text-base leading-3 my-5 '>
     {props.text} →
   </p>
 );

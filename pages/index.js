@@ -14,7 +14,7 @@ const Home = () => (
           <h2 className='text-3xl md:text-5xl font-semibold'>
             Start as many podcasts as you'd like
           </h2>
-          <p className='text-2xl'>
+          <p className='text-base md:text-2xl'>
             We don't charge you more for creating additional podcasts.
           </p>
           <Learn />
@@ -42,7 +42,7 @@ const Home = () => (
           <h2 className=' text-3xl md:text-5xl mb-8 font-semibold'>
             Publish your podcast everywhere
           </h2>
-          <p className='text-2xl max-w-2xl mx-auto'>
+          <p className='text-base md:text-2xl max-w-2xl mx-auto'>
             We help you distribute to Apple Podcasts, Spotify, Google Podcasts,
             Overcast, Pocket Casts, and many more!
           </p>
@@ -60,7 +60,7 @@ const Home = () => (
           <h2 className=' text-3xl md:text-5xl mb-8 font-semibold'>
             How does this sound?
           </h2>
-          <p className='text-2xl max-w-2xl mx-auto'>
+          <p className='text-base md:text-2xl max-w-2xl mx-auto'>
             Embed the podcast player on your website.
           </p>
           <Learn text='VIEW MORE EXAMPLES' />
@@ -81,7 +81,7 @@ const Home = () => (
           <h2 className=' text-3xl md:text-5xl mb-8 font-semibold'>
             View detailed podcast analytics
           </h2>
-          <p className='text-2xl max-w-2xl mx-auto'>
+          <p className='text-base md:text-2xl max-w-2xl mx-auto'>
             See your average downloads per episode, popular podcast apps, number
             of subscribers, trends.
           </p>
@@ -99,7 +99,7 @@ const Home = () => (
           <h2 className=' text-3xl md:text-5xl mb-8 font-semibold'>
             Who uses Transistor for their podcast?
           </h2>
-          <p className='text-2xl max-w-2xl mx-auto'>
+          <p className='text-base md:text-2xl max-w-2xl mx-auto'>
             Creatives, businesses, and professional podcasters trust Transistor
             with their audio hosting and analytics.
           </p>

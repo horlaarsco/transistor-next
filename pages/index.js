@@ -19,25 +19,31 @@ const Home = () => (
           </p>
           <Learn />
         </div>
-        <div className='flex justify-center mt-16 '>
-          <iframe
-            width='896'
-            height='504'
-            src='https://www.youtube.com/embed/hUugNVgsXvk'
-            frameborder='0'
-            allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
-            allowfullscreen
-          ></iframe>
+        <div className=' max-w-4xl mx-auto'>
+          <div
+            className='flex justify-center mt-16 relative '
+            style={{ "padding-bottom": "56%" }}
+          >
+            <iframe
+              width='896'
+              height='504'
+              className='absolute h-full w-full '
+              src='https://www.youtube.com/embed/hUugNVgsXvk'
+              frameborder='0'
+              allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
 
         <style jsx>{`
           iframe {
-            border-radius: 1rem;
+            border-radius: 0.5rem;
           }
         `}</style>
       </div>
 
-      <div className='text-center mt-16 mx-auto w-4/5'>
+      <div className='text-center mt-16 mx-auto w-4/5 relative'>
         <div>
           <h2 className=' text-3xl md:text-5xl mb-8 font-semibold'>
             Publish your podcast everywhere
@@ -73,6 +79,7 @@ const Home = () => (
           frameborder='0'
           scrolling='no'
           seamless='true'
+          style={{ width: "100%", height: "180" }}
         ></iframe>
       </div>
 
@@ -106,10 +113,10 @@ const Home = () => (
           <Learn />
         </div>
         <div className='w-full'>
-          <div className='flex mb-2 h-64 overflow-hidden'>
-            <div className='w-1/2 mr-l  relative overflow-hidden'>
+          <div className='flex flex-col  sm:flex-row mb-2 sm:h-56 md:h-64 overflow-hidden'>
+            <div className='sm:w-1/2 mr-l  relative overflow-hidden'>
               <img
-                className='md:h-full lg:h-auto'
+                className='sm:h-full lg:h-auto'
                 src='./images/mess.jpg'
                 alt=''
               />
@@ -117,9 +124,9 @@ const Home = () => (
                 Mess
               </p>
             </div>
-            <div className='w-1/2 ml-1  relative overflow-hidden'>
+            <div className='sm:w-1/2 ml-1 mt-5 sm:mt-0  relative overflow-hidden'>
               <img
-                className='md:h-full lg:h-auto'
+                className='sm:h-full lg:h-auto'
                 src='./images/lew.jpg'
                 alt=''
               />
@@ -128,10 +135,10 @@ const Home = () => (
               </p>
             </div>
           </div>
-          <div className='flex mb-2 h-64 overflow-hidden'>
+          <div className='hidden sm:flex flex mb-2 sm:h-56 md:h-64 overflow-hidden'>
             <div className='w-1/3 mr-1  relative overflow-hidden'>
               <img
-                className='md:h-full lg:h-auto'
+                className='sm:h-full lg:h-auto'
                 src='./images/collen.jpg'
                 alt=''
               />
@@ -141,17 +148,17 @@ const Home = () => (
             </div>
             <div className='w-1/3 mr-1  mr-l  relative overflow-hidden'>
               <img
-                className='md:h-full lg:h-auto'
+                className='sm:h-full lg:h-auto'
                 src='./images/bara.jpg'
                 alt=''
               />{" "}
-              <p className='absolute bottom-0 right-0 border-0 text-sm bg-gray-800 py-2 px-3 rounded-tl  '>
+              <p className=' absolute bottom-0 right-0 border-0 text-sm bg-gray-800 py-2 px-3 rounded-tl  '>
                 Bara Við
               </p>
             </div>
             <div className='w-1/3 mr-l  relative overflow-hidden'>
               <img
-                className='md:h-full lg:h-auto'
+                className='sm:h-full lg:h-auto'
                 src='./images/ashley.jpg'
                 alt=''
               />{" "}

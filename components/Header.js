@@ -21,13 +21,23 @@ const Header = props => (
       <img className='w-40 mr-4 lg:mr-8' src='/images/logo.svg' alt='' />
       <nav className='flex items-center w-full justify-between'>
         <ul className='flex items-center ml-6'>
-          <li className='mr-4 lg:mr-8'>Pricing</li>
-          <li className='mr-4 lg:mr-8'>How podcasting works</li>
-          <li className='mr-4 lg:mr-8'>Examples</li>
+          <li className='mr-4 lg:mr-8 border-b-2  border-transparent hover:border-white '>
+            Pricing
+          </li>
+          <li className='mr-4 lg:mr-8 border-b-2  border-transparent hover:border-white'>
+            How podcasting works
+          </li>
+          <li className='mr-4 lg:mr-8 border-b-2  border-transparent hover:border-white'>
+            Examples
+          </li>
         </ul>
         <ul className='flex items-center mr-0'>
-          <li className='mr-4 lg:mr-8'>Log In</li>
-          <li className=' border rounded py-1 px-4'>Sign Up</li>
+          <li className='mr-4 lg:mr-8 border-b-2  border-transparent hover:border-white'>
+            Log In
+          </li>
+          <li className=' border rounded py-1 px-4 hover:bg-white hover:text-black'>
+            Sign Up
+          </li>
         </ul>
       </nav>
     </div>

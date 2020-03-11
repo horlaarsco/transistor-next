@@ -2,7 +2,7 @@ const Banner = () => (
   <div className='lg:my-32 md:my-6 lg:ml-6 xs:ml-0'>
     <div className='relative xl:mx-24 lg:mr-0   pb-8 lg:pt-12 '>
       <div className='text-center lg:text-left xl:w-3/5 lg:w-4/5'>
-        <h1 className=' text-4xl md:text-5xl lg:text-6xl leading-tight'>
+        <h1 className=' font-semibold text-4xl md:text-5xl lg:text-6xl leading-tight'>
           Your podcast's
           <span className='block like-gold '> publishing platform</span>
         </h1>
